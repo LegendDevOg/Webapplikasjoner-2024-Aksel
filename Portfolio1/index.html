@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosjektoversikt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Prosjektoversikt</h1>
+    </header>
+    <div class="container">
+        <section id="project-list">
+            <h2>Alle Prosjekter</h2>
+            <ul id="projects">
+                <!-- Prosjekter vil bli lagt til her dynamisk -->
+            </ul>
+        </section>
+        <section id="new-project-form">
+            <h2>Opprett Nytt Prosjekt</h2>
+            <form id="projectForm">
+                <label for="projectName">Prosjektnavn:</label>
+                <input type="text" id="projectName" required>
+                
+                <label for="projectDescription">Beskrivelse:</label>
+                <textarea id="projectDescription" required></textarea>
+                
+                <label for="startDate">Startdato:</label>
+                <input type="date" id="startDate" required>
+                
+                <label for="endDate">Sluttdato:</label>
+                <input type="date" id="endDate" required>
+                
+                <h3>Mål:</h3>
+                <div id="goals-container">
+                    <!-- Målene vil bli lagt til her -->
+                </div>
+                <input type="text" id="goalInput" placeholder="Skriv inn et mål">
+                <button type="button" id="addGoalButton">Legg til mål</button>
+                
+                <button type="submit">Opprett nytt prosjekt</button>
+            </form>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

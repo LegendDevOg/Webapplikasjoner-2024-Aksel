@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node16",
+      "module": "Node16", // You could also set this to "CommonJS" if your setup requires it
+      "target": "ES2020",
+      "lib": ["ES2020", "DOM"],
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "skipLibCheck": false, // Set to true if you're sure about ignoring type checking for libraries
+      "baseUrl": "./",
+      "types": ["node"],
+      "paths": {
+        "@/*": ["src/*"]
+      }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
